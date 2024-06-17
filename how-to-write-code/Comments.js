@@ -1,4 +1,4 @@
-   // This demo shows off comments!
+  // This demo shows off comments!
 
    // console.log("This does not print.");
 
@@ -9,4 +9,8 @@
    multi-line
    comments. */
 
+  // This is me just testing out the single line comment feature
+
+  /*This is my test on trying
+  multi linge comments. */
    console.log("Comments make your code more readable by others.");
