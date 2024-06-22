@@ -6,16 +6,18 @@ let launchReady = false;
 let fuelLevel = 17000;
 let crewStatus = true;
 let computerStatus = 'green';
-
+let fuelLevelCheck;
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
    launchReady = true;
+   fuelLevelCheck = true;
 } else {
    console.log('WARNING: Insufficient fuel!');
    launchReady = false;
+   fuelLevelCheck = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("launchReady = ", fuelLevelCheck);
 
 if (crewStatus && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
@@ -25,4 +27,8 @@ if (crewStatus && computerStatus === 'green'){
    launchReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+if (fuelLevelCheck === true && launchReady === true) {
+   console.log("CLEARED!! Have a safe flight.") 
+} else {
+   console.log("NOT CLEARED FOR TAKE OFF. CHECK FUEL LEVELS")
+}
