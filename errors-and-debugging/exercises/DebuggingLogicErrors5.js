@@ -28,7 +28,7 @@ if (crewStatus && computerStatus === 'green'){
 }
 
 if (fuelLevelCheck === true && launchReady === true) {
-   console.log("CLEARED!! Have a safe flight.") 
+   console.log("Liftoff!") 
 } else {
-   console.log("NOT CLEARED FOR TAKE OFF. CHECK FUEL LEVELS")
+   console.log("Launch Scrubbed")
 }
