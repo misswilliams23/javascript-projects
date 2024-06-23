@@ -7,6 +7,7 @@ console.log(language.slice(0,1) + language.slice(4,5));
 
 //2. Without using slice(), use method chaining to accomplish the same thing.
 console.log(language[0] + language[4]);
+console.log(language.toUpperCase().slice(0,1) + language.toUpperCase().slice(4,5));
 
 //3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
 let initials = (language.slice(0,1) + language.slice(4,5));
@@ -20,3 +21,4 @@ console.log(`The abbreviation for '${language}' is ${initials}.`);
 let notTitleCase = 'title case';
 console.log(notTitleCase.replace('t', 'T').replace('c', 'C'));
 console.log(notTitleCase[0].toUpperCase() + notTitleCase.slice(1,6) + "" + notTitleCase[6].toUpperCase() + notTitleCase.slice(7,10));
+console.log((notTitleCase.toUpperCase().slice(0,1)) + notTitleCase.toLowerCase().slice(1,6) + ((notTitleCase.toUpperCase().slice(6,7)) + notTitleCase.toLowerCase().slice(7,10)));
