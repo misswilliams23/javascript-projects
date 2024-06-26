@@ -41,14 +41,6 @@ while (shuttleFuelLevel >= 0) {
 }
 
 
-
-// while (shuttleFuelLevel-100*amtOfAstronauts >= 0) {
-//   shuttleAltitude += 50;
-//   shuttleFuelLevel -= 100*amtOfAstronauts;
-//   console.log(shuttleAltitude);
-//   console.log(shuttleFuelLevel);
-//   }
-
 console.log( `The shuttle gained an altidude of ${shuttleAltitude} km. `)
 
 if (shuttleAltitude >= 2000 ) {
